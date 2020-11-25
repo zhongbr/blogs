@@ -1,0 +1,63 @@
+---
+common-css:
+  - "/assets/css/bootstrap-social.css"
+  - "/assets/css/main.css"
+common-ext-css:
+  - href: "/bootstrap/4.4.1/css/bootstrap.min.css"
+    sri: "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+  - "/assets/css/all.min.css"
+  - "/assets/css/googleapi.css"
+  - "/assets/css/googleapi2.css"
+common-ext-js:
+  - href: "/assets/js/jquery-3.4.1.min.js"
+    sri: "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  - href: "/assets/js/popper.min.js"
+    sri: "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  - href: "/assets/js/bootstrap.min.js"
+    sri: "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+common-js:
+  - "/assets/js/main.js"
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.language | default: site.language | default: 'en' }}">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2020 -->
+  {% include head.html %}
+
+  <body>
+
+    <!-- 监听加载完毕 -->
+    <script src="/assets/js/clipboard.js"></script>
+    <script>
+     
+      function copy(message) {
+        var input = document.createElement("input");
+        input.value = JSON.parse(message);
+        document.body.appendChild(input);
+        input.select();
+        input.setSelectionRange(0, input.value.length), document.execCommand('Copy');
+        document.body.removeChild(input);
+        alert("复制成功");
+      }
+
+      window.onload = function(){
+        let codes = document.querySelectorAll('div.highlight');
+        for(let i=0;i<codes.length;i++){
+          let code = codes[i];
+          //code.innerHTML += `<button onclick="copy('${JSON.stringify(code.innerText)}')">复制代码</button>`;
+        }
+      }
+    </script>
+
+    {% include gtm_body.html %}
+  
+    {% include nav.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+  
+    {% include footer-scripts.html %}
+  
+  </body>
+</html>

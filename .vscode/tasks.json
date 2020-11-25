@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gcc -g D:/博客Markdown笔记/examples/AndCheckSet.c -oD:/博客Markdown笔记/examples/AndCheckSet.exe",
+            "problemMatcher": [],
+        }
+    ]
+}
