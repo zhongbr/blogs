@@ -46,7 +46,7 @@ files字段表示一个编译文件列表，列表元素可以是等待编译的
 
 tsconfig.json可以使用extends字段从其他的配置文件中继承配置，其值是一个字符串，是要继承的文件的路径。
 
-```json
+```javascript
 {
   "extends":"path/to/parent/tsconfig" // .json文件后缀名可以不带
 }
