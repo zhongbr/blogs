@@ -1,6 +1,6 @@
 ---
 title: 'TypeScript：tsconfig.json配置'
-tags: ['typescript', 'tsconfig', '前端']
+tags: ['TypeScript', 'tsconfig', '前端']
 ---
 
 # TypeScript配置文件tsconfig.json
