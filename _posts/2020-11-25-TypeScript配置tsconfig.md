@@ -27,7 +27,7 @@ tsconfig.json文件是typescript项目根目录中，配置编译选项和根文
 
 ## 编译文件列表files
 
-files字段表示一个编译文件列表，列表元素可以是等待编译的typescript文件的相对或者绝对地址，可以配合"include"和"exclude"两个字段包含或者排除glob匹配模式的列表：
+files字段用来表示一个编译文件列表，列表元素可以是等待编译的typescript文件的相对或者绝对地址，可以配合"include"和"exclude"两个字段包含或者排除glob匹配模式的列表：
 
 - *: 匹配0个或者多个字符
 - ?: 匹配任意一个字符
