@@ -7,7 +7,7 @@ tags: ['typescript', 'tsconfig', '前端']
 
 tsconfig.json文件是typescript项目根目录中，配置编译选项和根文件的配置文件。
 
-如果在不指定编译配置文件的情况下直接调用**tsc**命令：
+如果在不指定编译配置文件的情况下直接调用**tsc**命令的时候：
 
 - 使用命令行参数“--project”指定一个包含tsconfig.json文件的项目目录
 - 不适用上面的参数，也不指定配置文件时，tsc命令会逐层查找父级目录，直到查找到tsconfig.json文件
