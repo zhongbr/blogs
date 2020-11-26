@@ -3,7 +3,7 @@ title: 'TypeScript：tsconfig.json配置'
 tags: ['typescript', 'tsconfig', '前端']
 ---
 
-# TypeScript配置tsconfig.json
+# TypeScript配置文件tsconfig.json
 
 tsconfig.json文件是typescript项目根目录中，配置编译选项和根文件的配置文件。
 
