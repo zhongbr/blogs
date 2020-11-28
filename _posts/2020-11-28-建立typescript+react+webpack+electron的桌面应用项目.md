@@ -200,7 +200,7 @@ new CopyWebpackPlugin({
 
 ```
 
-### II. webpack.main.js Electron逻辑线程使用的webpack打包配置
+### II. webpack.main.js Electron逻辑进程使用的webpack打包配置
 
 ```javascript
 const path = require('path');
@@ -281,7 +281,7 @@ module.exports = {
 
 
 
-### IV. 在src/main下新建一个main.ts作为逻辑线程
+### IV. 在src/main下新建一个main.ts作为逻辑进程
 
 main.ts的代码如下：
 
